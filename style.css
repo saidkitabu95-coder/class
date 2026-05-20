@@ -1,0 +1,197 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: brown;
+    color: black;
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: darkblue;
+    border-bottom: 3px solid blue;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: darkblue;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid red;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-size: 18px;
+    color: lightblue;
+}
+
+#about p {
+    font-size: 16px;
+    color: black;
+}
+
+.skills-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background-color: lightblue;
+    color: darkblue;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#projects h2 {
+    grid-column: span 2;
+}
+
+.project-item {
+    background-color: orange;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid blue;
+}
+
+.project-item h3 {
+    color: black;
+    margin-bottom: 5px;
+}
+
+.project-item p {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.project-link {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+#contact {
+    background-color: lightblue;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid silver;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: darkblue;
+    font-size: 14px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid lightgray;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: white;
+    outline: none;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: blue;
+    background-color: forestgreen;
+}
+
+.submit-btn {
+    background-color: darkblue;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: blue;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: gray;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    #projects {
+        grid-template-columns: 1fr;
+    }
+
+    #projects h2 {
+        grid-column: span 1;
+    }
+
+    .skills-list {
+        justify-content: center;
+    }
+}
